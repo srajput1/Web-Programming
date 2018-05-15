@@ -1,0 +1,21 @@
+    
+    <div class="page-header">
+        <h1><span class=""></span> User Profile Page</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                {{#if user}}
+                    <p>
+                        <strong>username</strong>: {{user.username }}<br>
+                        <strong>firstname</strong>: {{user.firstname }}<br>
+                        <strong>lastname</strong>: {{user.lastname }}<br>
+                        <strong>profession</strong>: {{user.profession }}<br>
+                        <strong>bio</strong>: {{user.bio }}<br>
+                    </p>
+                {{/if}}
+            </div>
+            <a href="/logout" class="btn btn-default">Logout</a>
+        </div>
+    </div>
